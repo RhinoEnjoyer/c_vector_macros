@@ -5,18 +5,6 @@
 #include <memory.h>
 #include <sys/types.h>
 
-#define PRIMITIVE_TYPE_ALIAS()\
-typedef float           f_flt;\
-typedef double          d_flt;\
-typedef int             s_int;\
-typedef long            l_int;\
-typedef long long       l_long;\
-typedef long double     l_dbl;\
-typedef unsigned int    u_int;\
-typedef char            s_chr;\
-typedef unsigned char   u_chr;\
-
-
 #define vec(T) vec_##T
 #define vALLOC(T,v,s) vec_##T##_alloc(v,s)
 #define vREALLOC(T,v,s) vec_##T##_realloc(v,s)
